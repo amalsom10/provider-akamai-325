@@ -1,0 +1,10 @@
+name: "property-a.my-domain.net"
+cpcode_name: "property-a.my-domain.net"
+edge_hostname: "property-a.my-domain.net.edgekey.net"
+hostnames:
+  - "property-a.my-domain.net"
+ip_behavior: "IPV6_COMPLIANCE"
+origin_hostname: "property-a.hostname"
+email: ""
+rules_path: "property-snippets/main.json"
+certificate_enrollment_id: 0

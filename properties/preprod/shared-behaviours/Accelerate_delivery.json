@@ -1,0 +1,18 @@
+{
+  "children": [
+    {
+      "behaviors": [
+        {
+          "name": "dnsAsyncRefresh",
+          "options": {
+            "enabled": true,
+            "timeout": "1h"
+          }
+        }
+      ],
+      "name": "Origin connectivity",
+      "options": {},
+      "criteriaMustSatisfy": "all"
+    }
+  ]
+}

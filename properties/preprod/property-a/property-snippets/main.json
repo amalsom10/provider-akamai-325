@@ -1,0 +1,31 @@
+{
+  "rules": {
+    "name": "default",
+    "options": {
+      "is_secure": true
+    },
+    "behaviors": [
+      {
+        "name": "origin",
+        "options": {
+          "originType": "CUSTOMER",
+          "hostname": "my-hostname",
+          "forwardHostHeader": "REQUEST_HOST_HEADER",
+          "cacheKeyHostname": "ORIGIN_HOSTNAME",
+          "compress": true,
+          "httpPort": 80,
+          "httpsPort": 443,
+          "enableTrueClientIp": true,
+          "verificationMode": "CUSTOM",
+          "originCertsToHonor": "COMBO",
+          "trueClientIpHeader": "True-Client-IP",
+          "trueClientIpClientSetting": true,
+          "originSni": true
+        }
+      }
+    ],
+    "children": [
+      "#include:../../shared-behaviours/Accelerate_delivery.json"
+    ]
+  }
+}
